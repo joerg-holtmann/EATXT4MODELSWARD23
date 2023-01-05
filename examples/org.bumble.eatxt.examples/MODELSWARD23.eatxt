@@ -1,0 +1,43 @@
+EAPackage DataTypes {
+	EANumerical Integer_uint8
+}
+
+EAPackage FcnDesignTypes {
+	DesignFunctionType WiperCtrl {
+		FunctionFlowPort WipingCmd {
+			direction out;
+			type "DataTypes.Integer_uint8";
+		}
+	}
+	
+	DesignFunctionType WiperMotor {
+		FunctionFlowPort WipingCmd {
+			direction in;
+			type "DataTypes.Integer_uint8";
+		}
+	}
+}
+
+EAPackage FcnDesignArchitecture {	
+	DesignFunctionType FDAWithController {				
+		FunctionConnector Ctrl2MotorConnector {
+			FunctionConnector_port {
+				functionPort 
+					"FcnDesignTypes.WiperCtrl.WipingCmd";							
+			}
+			FunctionConnector_port {
+				functionPort 
+					"FcnDesignTypes.WiperMotor.WipingCmd";
+			}
+		}
+		
+		DesignFunctionPrototype wiperCtrl {
+			type "FcnDesignTypes.WiperCtrl";			
+		}
+		
+		DesignFunctionPrototype wiperMotor {
+			type "FcnDesignTypes.WiperMotor";
+		}								
+	}
+}
+
