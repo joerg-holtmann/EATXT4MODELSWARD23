@@ -4,7 +4,6 @@ import org.eclipse.xtext.xtext.generator.*
 import org.eclipse.xtext.xtext.generator.model.project.*
 
 var rootPath = ".."
-var testPath = "${rootPath}/../tests/org.bumble.eatxt.tests"
 var idePath = "${rootPath}/org.bumble.eatxt.ide"
 
 Workflow {
@@ -17,15 +16,13 @@ Workflow {
 				baseName = "org.bumble.eatxt"
 				rootPath = rootPath
 				runtimeTest = {
-					enabled = true
-					root = testPath
+					enabled = false					
 				}
 				eclipsePlugin = {
 					enabled = true
 				}
 				eclipsePluginTest = {
-					enabled = true
-					root = testPath
+					enabled = false
 				}
 				genericIde = {
 					enabled = true
