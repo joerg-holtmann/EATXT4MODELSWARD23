@@ -1,0 +1,66 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Exploiting Meta-Model Structures in the Generation of the
+  EATXT Editor
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Jörg
+    family-names: Holtmann
+    email: jorg.holtmann@gu.se
+    affiliation: Chalmers | University of Gothenburg
+    orcid: 'https://orcid.org/0000-0001-6141-4571'
+  - given-names: Jan-Philipp
+    family-names: Steghöfer
+    email: jan-philipp.steghoefer@xitaso.com
+    affiliation: Xitaso IT & Software Solutions GmbH
+    orcid: 'https://orcid.org/0000-0003-1694-0972'
+  - given-names: Weixing
+    family-names: Zhang
+    email: weixing.zhang@gu.se
+    affiliation: Chalmers | University of Gothenburg
+    orcid: 'https://orcid.org/0000-0003-2890-6034'
+repository-code: 'https://github.com/joerg-holtmann/EATXT4MODELSWARD23'
+abstract: >-
+  This repository contains an Xtext-based editor for a
+  textual concrete syntax of the EAST-ADL meta-model, called
+  EATXT. The editor is used to explore what a textual syntax
+  for EAST-ADL can look like and contains artifacts and
+  examples as demonstrations means for the MODELSWARD'23
+  Position Paper "Exploiting Meta-Model Structures in the
+  Generation of Xtext Editors".
+keywords:
+  - Xtext
+  - textual modelling
+  - modeling language engineering
+  - modeling environments
+license: ECL-2.0
+preferred-citation:
+  type: conference-paper
+  authors:
+  - given-names: Jörg
+    family-names: Holtmann
+    email: jorg.holtmann@gu.se
+    affiliation: Chalmers | University of Gothenburg
+    orcid: 'https://orcid.org/0000-0001-6141-4571'
+  - given-names: Jan-Philipp
+    family-names: Steghöfer
+    email: jan-philipp.steghoefer@xitaso.com
+    affiliation: Xitaso IT & Software Solutions GmbH
+    orcid: 'https://orcid.org/0000-0003-1694-0972'
+  - given-names: Weixing
+    family-names: Zhang
+    email: weixing.zhang@gu.se
+    affiliation: Chalmers | University of Gothenburg
+    orcid: 'https://orcid.org/0000-0003-2890-6034'
+  conference:
+    name: "11th International Conference on Model-Based Software and Systems Engineering (MODELSWARD'23)"
+  start: 218 # First page number 
+  end: 225 # Last page number
+  title: "Exploiting Meta-Model Structures in the Generation of Xtext Editors"
+  year: 2023
